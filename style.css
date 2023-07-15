@@ -6,3 +6,40 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: var(--dark-02, #424242);
+    font-weight: 500;
+}
+nav h3{
+    color: var(--dark-01, #131313);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-content{
+ max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    color: var(--dark-01, #131313);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: var(--dark-03, #727272);
+}
