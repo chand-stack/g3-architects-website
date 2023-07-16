@@ -148,8 +148,73 @@ main{
     display: flex;
     justify-content: space-around;
 }
-
-
+.image-section{
+    display: flex;
+    margin-top: 8.2rem;
+    gap: 9rem;
+    align-items: center;
+    margin-bottom: 8.2rem;
+}
+.img-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 1rem;
+}
+.primary-description{
+    color: #727272;
+}
+.box{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding: 2rem;
+margin-bottom: 1rem;
+}
+.badge{
+    width: 320px;
+height: 200px;
+border-radius: 8px;
+background: #FF900E;
+text-align: center;
+align-items: center;
+position: relative;
+bottom: 8rem;
+right: 5rem;
+}
+.badge-title{
+    color: #FFF;
+text-align: center;
+font-size: 4rem;
+font-weight: 700;
+margin-bottom: 0px;
+padding-top: 2rem;
+}
+.badge-des{
+    color: #FFF;
+font-size: 25px;
+font-weight: 500;
+margin-top: 0px;
+}
+.right{
+    padding-top: 11rem;
+}
+footer{
+    height: 100px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 3.2rem 10% 10rem 10%;
+    text-align: center;
+}
+.footer-content{
+    color: var(--dark-02, #424242);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
 
 
 
@@ -161,7 +226,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .feature-container{
+    nav, .feature-container ,.image-section{
         flex-direction: column;
         text-align: center;
     }
@@ -200,13 +265,28 @@ gap: 10px;
     .sponsor-section{
         width: auto;
     }
+    .right img{
+        width: auto;
+        height: 30rem;
+    }
+    .badge{
+        position: static;
+        margin-left: 1rem;
+    }
+    footer{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footer-content{
+        padding-top: 0%;
+    }
 
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
     header{
         padding: 50px;}
-        nav, .feature-container{
+        nav, .feature-container, .image-section{
             flex-direction: column;
             text-align: center;
         }
@@ -236,4 +316,15 @@ gap: 10px;
         margin-top: 30px;
         gap: 1rem;
         }
+        .right img{
+            width: auto;
+            height: 50rem;
+        }
+            .badge{
+                position: static;
+                margin: 0 auto;
+            }
+            .footer-content{
+                padding-top: 0%;
+            }
 }
